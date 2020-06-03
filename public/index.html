@@ -67,19 +67,6 @@
       <!-- <img style="-webkit-user-select: none;" src="http://localhost:3456/video_feed"></img> -->
     </div>
     <script>
-      // const socket = io();
-      // console.log('existo')
-      // socket.on("StreamVideo", (frame) => {
-      //   console.log(frame);
-      // });
-      // socket.on("ClassData", (classesDb) => {
-      //   console.log(classesDb);
-      // });
-
-      // socket.on("ScoreData", (scoresDb) => {
-      //   console.log(scoresDb);
-      // });
-
       const vm = new Vue({
         el: "#vapp",
         data: {
@@ -100,15 +87,19 @@
                   <div class="row justify-content-center">
                     <div class="col">
                       <h1>Sistema de control de calidad</h1>
-                    </div>
+                      <div class="row justify-content-center">
+                    <img src="logo.png"></img>
                   </div>
-
+                    </div>
+                    
+                  </div>
+                  
                   <div class="row justify-content-center">
                     <div class="col-md-4 align-self-center">
                       <button @click="goTo('video.html')" type="button" class="btn btn-primary">Reconocimiento en tiempo real</button>
                     </div>
                     <div class="col-md-4 align-self-center">
-                      <button @click="goTo('db.html')" type="button" class="btn btn-primary">Historial</button>
+                      <button @click="goTo('db.html')" type="button" class="btn btn-primary">Historial de registros</button>
                     </div>
                   </div>
 
